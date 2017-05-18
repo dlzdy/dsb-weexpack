@@ -1,0 +1,5 @@
+/node_modules
+/dist
+build
+/platforms/android/.gradle
+/platforms/android/.idea
