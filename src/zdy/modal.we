@@ -1,0 +1,26 @@
+<template>
+    <div>
+        <text class="button">Toast</text>
+        <text class="button">Alert</text>
+        <text class="button">Confirm</text>
+        <text class="button">Prompt</text>
+
+    </div>
+</template>
+
+<style>
+    .button {
+        width: 200px;
+        border-width: 2px;
+        border-style: double;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+</style>
+
+<script>
+    require("");
+
+</script>
