@@ -6,6 +6,9 @@
   "scripts": {
     "build": "webpack",
     "build_plugin": "webpack --config ./tools/webpack.config.plugin.js --color",
+	"copy:android": "xcopy dist\\. platforms\\android\\app\\src\\main\\assets\\dist\\ /s/y",
+    "copy:ios": "xcopy dist\\. platforms\\ios\\bundlejs\\ /s",
+    "copy": "npm run copy:android && npm run copy:ios",	
     "dev": "weex-builder src dist -w",
     "serve": "webpack-dev-server --config webpack.dev.js -p --open"
   },

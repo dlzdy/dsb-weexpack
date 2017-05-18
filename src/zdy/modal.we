@@ -10,17 +10,16 @@
 
 <style>
     .button {
-        width: 200px;
-        border-width: 2px;
-        border-style: double;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        width: 200;
+        border-width: 2;
+        border-style: solid;
+        margin-top: 10;
+        margin-bottom: 10;
         text-align: center;
     }
 
 </style>
 
 <script>
-    require("");
 
 </script>

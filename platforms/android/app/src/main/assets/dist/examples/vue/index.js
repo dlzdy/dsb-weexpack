@@ -1,4 +1,4 @@
-// { "framework": "Vue"} 
+// { "framework": "Weex"} 
 
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -65,60 +65,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 467);
+/******/ 	return __webpack_require__(__webpack_require__.s = 690);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 217:
-/***/ (function(module, exports, __webpack_require__) {
-
-//
-//
-//
-//
-
-module.exports = {
-  data: function () {
-    var root = typeof window === 'object' ? 'vue-web/vue' : 'vue';
-
-    return {
-      items: [
-      // common
-      { name: root + '/syntax/hello-world', title: 'Hello World' }, { name: root + '/style/index', title: 'Common Style' }, { name: root + '/animation', title: 'Animation' },
-
-      // component
-      { name: root + '/components/text', title: 'Text' }, { name: root + '/components/image', title: 'Image' }, { name: root + '/components/input', title: 'Input' }, { name: root + '/components/scroller', title: 'Scroller' }, { name: root + '/components/list', title: 'List' }, { name: root + '/components/waterfall', title: 'Waterfall' }, { name: root + '/components/slider', title: 'Slider' }, { name: root + '/components/a', title: 'A' }, { name: root + '/components/video', title: 'Video' }, { name: root + '/components/countdown', title: 'Countdown' }, { name: root + '/components/marquee', title: 'Marquee' }, { name: root + '/components/web', title: 'Web' }, { name: root + '/components/navigator', title: 'Navigator' }, { name: root + '/components/tabbar', title: 'Tabbar' },
-
-      // module
-      { name: root + '/modules/instance-api', title: 'Instance API' }, { name: root + '/modules/modal', title: 'Modal' }, { name: root + '/modules/stream', title: 'Stream' }, { name: root + '/modules/storage', title: 'Storage' },
-      // {name: 'module/clipboard', title: 'Clipboard'}, // 0.8 , developing
-
-      // showcase
-      { name: root + '/showcase/boxshadow', title: 'boxshadow' }, { name: root + '/showcase/progress', title: 'Progress Bar' }, { name: root + '/showcase/itemlist', title: 'List (Advanced)' }, { name: root + '/showcase/calculator', title: 'Calculator' },
-      // {name: root + '/showcase/minesweeper', title: 'Minesweeper'},
-      // {name: root + '/showcase/ui', title: 'UI Gallery'},
-      // {name: root + '/showcase/dropdown/dropdown-demo', title: 'Dropdown'}
-
-      // market
-      { name: root + '/market/gcanvas', title: 'Gcanvas' }]
-    };
-  },
-  components: {
-    exampleList: __webpack_require__(457)
-  },
-  created: function () {
-    let root = typeof window === 'object' ? 'vue-web/vue' : 'vue';
-    let platform = this.$getConfig().env.platform.toLowerCase();
-    if (platform === 'ios') {
-      this.items.push({ name: root + '/showcase/compositing', title: 'Compositing' });
-    }
-  }
-};
-
-/***/ }),
-
-/***/ 27:
+/***/ 151:
 /***/ (function(module, exports) {
 
 /*
@@ -170,7 +122,55 @@ exports.getBaseURL = function (vm) {
 
 /***/ }),
 
-/***/ 308:
+/***/ 436:
+/***/ (function(module, exports, __webpack_require__) {
+
+//
+//
+//
+//
+
+module.exports = {
+  data: function () {
+    var root = typeof window === 'object' ? 'vue-web/vue' : 'vue';
+
+    return {
+      items: [
+      // common
+      { name: root + '/syntax/hello-world', title: 'Hello World' }, { name: root + '/style/index', title: 'Common Style' }, { name: root + '/animation', title: 'Animation' },
+
+      // component
+      { name: root + '/components/text', title: 'Text' }, { name: root + '/components/image', title: 'Image' }, { name: root + '/components/input', title: 'Input' }, { name: root + '/components/scroller', title: 'Scroller' }, { name: root + '/components/list', title: 'List' }, { name: root + '/components/waterfall', title: 'Waterfall' }, { name: root + '/components/slider', title: 'Slider' }, { name: root + '/components/a', title: 'A' }, { name: root + '/components/video', title: 'Video' }, { name: root + '/components/countdown', title: 'Countdown' }, { name: root + '/components/marquee', title: 'Marquee' }, { name: root + '/components/web', title: 'Web' }, { name: root + '/components/navigator', title: 'Navigator' }, { name: root + '/components/tabbar', title: 'Tabbar' },
+
+      // module
+      { name: root + '/modules/instance-api', title: 'Instance API' }, { name: root + '/modules/modal', title: 'Modal' }, { name: root + '/modules/stream', title: 'Stream' }, { name: root + '/modules/storage', title: 'Storage' },
+      // {name: 'module/clipboard', title: 'Clipboard'}, // 0.8 , developing
+
+      // showcase
+      { name: root + '/showcase/boxshadow', title: 'boxshadow' }, { name: root + '/showcase/progress', title: 'Progress Bar' }, { name: root + '/showcase/itemlist', title: 'List (Advanced)' }, { name: root + '/showcase/calculator', title: 'Calculator' },
+      // {name: root + '/showcase/minesweeper', title: 'Minesweeper'},
+      // {name: root + '/showcase/ui', title: 'UI Gallery'},
+      // {name: root + '/showcase/dropdown/dropdown-demo', title: 'Dropdown'}
+
+      // market
+      { name: root + '/market/gcanvas', title: 'Gcanvas' }]
+    };
+  },
+  components: {
+    exampleList: __webpack_require__(680)
+  },
+  created: function () {
+    let root = typeof window === 'object' ? 'vue-web/vue' : 'vue';
+    let platform = this.$getConfig().env.platform.toLowerCase();
+    if (platform === 'ios') {
+      this.items.push({ name: root + '/showcase/compositing', title: 'Compositing' });
+    }
+  }
+};
+
+/***/ }),
+
+/***/ 538:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -185,21 +185,21 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 456:
+/***/ 679:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(556)
+__vue_styles__.push(__webpack_require__(791)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(523)
+__vue_exports__ = __webpack_require__(754)
 
 /* template */
-var __vue_template__ = __webpack_require__(578)
+var __vue_template__ = __webpack_require__(816)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -211,10 +211,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "E:\\work_study\\weex\\dsb-weexpack\\src\\examples\\vue\\include\\example-list-item.vue"
+__vue_options__.__file = "E:\\work_study\\weex_study\\dsb-weexpack\\src\\examples\\vue\\include\\example-list-item.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-43abc062"
+__vue_options__._scopeId = "data-v-7003d4d9"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -230,17 +230,17 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 457:
+/***/ 680:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* script */
-__vue_exports__ = __webpack_require__(524)
+__vue_exports__ = __webpack_require__(755)
 
 /* template */
-var __vue_template__ = __webpack_require__(584)
+var __vue_template__ = __webpack_require__(801)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -252,7 +252,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "E:\\work_study\\weex\\dsb-weexpack\\src\\examples\\vue\\include\\example-list.vue"
+__vue_options__.__file = "E:\\work_study\\weex_study\\dsb-weexpack\\src\\examples\\vue\\include\\example-list.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__.style = __vue_options__.style || {}
@@ -270,21 +270,21 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 459:
+/***/ 682:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(558)
+__vue_styles__.push(__webpack_require__(781)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(526)
+__vue_exports__ = __webpack_require__(757)
 
 /* template */
-var __vue_template__ = __webpack_require__(581)
+var __vue_template__ = __webpack_require__(803)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -296,10 +296,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "E:\\work_study\\weex\\dsb-weexpack\\src\\examples\\vue\\include\\list-item.vue"
+__vue_options__.__file = "E:\\work_study\\weex_study\\dsb-weexpack\\src\\examples\\vue\\include\\list-item.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-551b521c"
+__vue_options__._scopeId = "data-v-19229408"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -315,17 +315,17 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 467:
+/***/ 690:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* script */
-__vue_exports__ = __webpack_require__(217)
+__vue_exports__ = __webpack_require__(436)
 
 /* template */
-var __vue_template__ = __webpack_require__(308)
+var __vue_template__ = __webpack_require__(538)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -337,7 +337,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "E:\\work_study\\weex\\dsb-weexpack\\src\\examples\\vue\\index.vue"
+__vue_options__.__file = "E:\\work_study\\weex_study\\dsb-weexpack\\src\\examples\\vue\\index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__.style = __vue_options__.style || {}
@@ -357,7 +357,7 @@ new Vue(module.exports)
 
 /***/ }),
 
-/***/ 523:
+/***/ 754:
 /***/ (function(module, exports, __webpack_require__) {
 
 //
@@ -381,7 +381,7 @@ module.exports = {
     url: { default: '' }
   },
   components: {
-    listItem: __webpack_require__(459)
+    listItem: __webpack_require__(682)
   },
   methods: {
     redirect: function () {
@@ -392,7 +392,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 524:
+/***/ 755:
 /***/ (function(module, exports, __webpack_require__) {
 
 //
@@ -404,7 +404,7 @@ module.exports = {
 //
 //
 
-var getBaseURL = __webpack_require__(27).getBaseURL;
+var getBaseURL = __webpack_require__(151).getBaseURL;
 module.exports = {
   props: {
     dir: {
@@ -415,7 +415,7 @@ module.exports = {
     }
   },
   components: {
-    exampleListItem: __webpack_require__(456)
+    exampleListItem: __webpack_require__(679)
   },
   created: function () {
     var base = getBaseURL(this);
@@ -430,7 +430,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 526:
+/***/ 757:
 /***/ (function(module, exports) {
 
 //
@@ -467,19 +467,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 556:
-/***/ (function(module, exports) {
-
-module.exports = {
-  "item-txt": {
-    "fontSize": 48,
-    "color": "#555555"
-  }
-}
-
-/***/ }),
-
-/***/ 558:
+/***/ 781:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -497,23 +485,42 @@ module.exports = {
 
 /***/ }),
 
-/***/ 578:
+/***/ 791:
+/***/ (function(module, exports) {
+
+module.exports = {
+  "item-txt": {
+    "fontSize": 48,
+    "color": "#555555"
+  }
+}
+
+/***/ }),
+
+/***/ 801:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('list-item', {
-    on: {
-      "click": _vm.redirect
-    }
-  }, [_c('text', {
-    staticClass: ["item-txt"]
-  }, [_vm._v(_vm._s(_vm.title))])])
+  return _c('list', _vm._l((_vm.items), function(item, i) {
+    return _c('cell', {
+      key: i,
+      appendAsTree: true,
+      attrs: {
+        "append": "tree"
+      }
+    }, [_c('example-list-item', {
+      attrs: {
+        "title": item.title,
+        "url": item.url
+      }
+    })], 1)
+  }))
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 581:
+/***/ 803:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -533,24 +540,17 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 584:
+/***/ 816:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('list', _vm._l((_vm.items), function(item, i) {
-    return _c('cell', {
-      key: i,
-      appendAsTree: true,
-      attrs: {
-        "append": "tree"
-      }
-    }, [_c('example-list-item', {
-      attrs: {
-        "title": item.title,
-        "url": item.url
-      }
-    })], 1)
-  }))
+  return _c('list-item', {
+    on: {
+      "click": _vm.redirect
+    }
+  }, [_c('text', {
+    staticClass: ["item-txt"]
+  }, [_vm._v(_vm._s(_vm.title))])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 
