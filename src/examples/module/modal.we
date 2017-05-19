@@ -72,7 +72,7 @@
         }, function(result) {
           self.toast("Click Prompt  " + result);
         });
-       
+
       }
     }
   }

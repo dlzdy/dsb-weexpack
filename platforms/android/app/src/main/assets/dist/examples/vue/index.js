@@ -65,7 +65,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 690);
+/******/ 	return __webpack_require__(__webpack_require__.s = 696);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -122,7 +122,7 @@ exports.getBaseURL = function (vm) {
 
 /***/ }),
 
-/***/ 436:
+/***/ 442:
 /***/ (function(module, exports, __webpack_require__) {
 
 //
@@ -157,7 +157,7 @@ module.exports = {
     };
   },
   components: {
-    exampleList: __webpack_require__(680)
+    exampleList: __webpack_require__(686)
   },
   created: function () {
     let root = typeof window === 'object' ? 'vue-web/vue' : 'vue';
@@ -170,7 +170,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 538:
+/***/ 544:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -185,21 +185,21 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 679:
+/***/ 685:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(791)
+__vue_styles__.push(__webpack_require__(799)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(754)
+__vue_exports__ = __webpack_require__(762)
 
 /* template */
-var __vue_template__ = __webpack_require__(816)
+var __vue_template__ = __webpack_require__(824)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -230,17 +230,17 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 680:
+/***/ 686:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* script */
-__vue_exports__ = __webpack_require__(755)
+__vue_exports__ = __webpack_require__(763)
 
 /* template */
-var __vue_template__ = __webpack_require__(801)
+var __vue_template__ = __webpack_require__(809)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -270,21 +270,21 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 682:
+/***/ 688:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* styles */
-__vue_styles__.push(__webpack_require__(781)
+__vue_styles__.push(__webpack_require__(789)
 )
 
 /* script */
-__vue_exports__ = __webpack_require__(757)
+__vue_exports__ = __webpack_require__(765)
 
 /* template */
-var __vue_template__ = __webpack_require__(803)
+var __vue_template__ = __webpack_require__(811)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -315,17 +315,17 @@ module.exports = __vue_exports__
 
 /***/ }),
 
-/***/ 690:
+/***/ 696:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __vue_exports__, __vue_options__
 var __vue_styles__ = []
 
 /* script */
-__vue_exports__ = __webpack_require__(436)
+__vue_exports__ = __webpack_require__(442)
 
 /* template */
-var __vue_template__ = __webpack_require__(538)
+var __vue_template__ = __webpack_require__(544)
 __vue_options__ = __vue_exports__ = __vue_exports__ || {}
 if (
   typeof __vue_exports__.default === "object" ||
@@ -357,7 +357,7 @@ new Vue(module.exports)
 
 /***/ }),
 
-/***/ 754:
+/***/ 762:
 /***/ (function(module, exports, __webpack_require__) {
 
 //
@@ -381,7 +381,7 @@ module.exports = {
     url: { default: '' }
   },
   components: {
-    listItem: __webpack_require__(682)
+    listItem: __webpack_require__(688)
   },
   methods: {
     redirect: function () {
@@ -392,7 +392,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 755:
+/***/ 763:
 /***/ (function(module, exports, __webpack_require__) {
 
 //
@@ -415,7 +415,7 @@ module.exports = {
     }
   },
   components: {
-    exampleListItem: __webpack_require__(679)
+    exampleListItem: __webpack_require__(685)
   },
   created: function () {
     var base = getBaseURL(this);
@@ -430,7 +430,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 757:
+/***/ 765:
 /***/ (function(module, exports) {
 
 //
@@ -467,7 +467,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 781:
+/***/ 789:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -485,7 +485,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 791:
+/***/ 799:
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -497,7 +497,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 801:
+/***/ 809:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -520,7 +520,7 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 803:
+/***/ 811:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -540,7 +540,7 @@ module.exports.render._withStripped = true
 
 /***/ }),
 
-/***/ 816:
+/***/ 824:
 /***/ (function(module, exports) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;

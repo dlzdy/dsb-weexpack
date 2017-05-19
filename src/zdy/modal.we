@@ -1,25 +1,66 @@
 <template>
     <div>
-        <text class="button">Toast</text>
-        <text class="button">Alert</text>
-        <text class="button">Confirm</text>
-        <text class="button">Prompt</text>
+        <text class="button" onclick="{{toast('this is toast',2)}}">Toast</text>
+        <text class="button" onclick="{{alert('警告')}}">Alert</text>
+        <text class="button" onclick="{{confirm('确认删除吗')}}">Confirm</text>
+        <text class="button" onclick="{{prompt('输入姓名')}}">Prompt</text>
 
     </div>
 </template>
 
 <style>
     .button {
-        width: 200;
-        border-width: 2;
+        width: 200px;
+        border-width: 2px;
         border-style: solid;
-        margin-top: 10;
-        margin-bottom: 10;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: 10px;
         text-align: center;
     }
-
 </style>
 
 <script>
+    module.exports = {
+        data:{
+
+        },
+        methods:{
+            toast: function(msg, duration) {
+                //var modal = weex.requireModule('modal');//网页不可以, Vuejs
+                var modal =  require('@weex-module/modal');//网页可以，native可以
+                modal.toast({
+                    message: msg,
+                    duration: duration,
+                });
+            },
+            alert: function(msg) {
+                var modal =  require('@weex-module/modal');//网页可以，native可以
+                modal.alert({
+                    message: msg,
+                    okTitle: '确定',
+                });
+            },
+            confirm: function(msg){
+                //var modal = weex.requireModule('modal');
+                var modal =  require('@weex-module/modal');//网页可以，native可以
+                modal.confirm({
+                    message: msg,
+                    okTitle: "确定",
+                    cancelTitle: "取消",
+                })
+            },
+            prompt: function(msg){
+                var modal =  require('@weex-module/modal');//网页可以，native可以
+                modal.prompt({
+                    message: msg,
+                    okTitle: "确定",
+                    cancelTitle: "取消",
+                }, function(result, data){
+
+                })
+            },
+        }
+    }
 
 </script>

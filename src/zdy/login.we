@@ -1,0 +1,16 @@
+<template>
+    <div>
+        <text style="font-size: 100px;">login</text>
+    </div>
+</template>
+
+<script>
+    module.exports = {
+        data: {},
+        methods: {}
+    }
+</script>
+
+<style>
+
+</style>

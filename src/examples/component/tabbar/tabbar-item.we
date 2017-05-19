@@ -1,12 +1,13 @@
 <template>
     <div class="wrapper">
         <text class="text" style="color:{{color}}">{{text}}</text>
+        <text>ddd</text>
     </div>
 </template>
 
 <style>
     .wrapper { 
-        width: 750; 
+        width: 750px;
         position: absolute; 
         top: 0; 
         left: 0; 
@@ -16,7 +17,7 @@
         justify-content: center;
     }
     .text {
-        font-size:60; 
+        font-size:60px;
         font-weight: bold; 
         font-family: "Open Sans", sans-serif;
     }
